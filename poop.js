@@ -1,6 +1,42 @@
 "use strict";
 
-confirm ("Before I Introduce myself, can you tell me a little about you?");
+confirm ("Let's play a guessing game!");
+
+var userAnswer = prompt('Yes or No?');
+if (userAnswer.toLowerCase () === 'yes' || userAnswer.toLowerCase() === 'y'){
+  alert('The user said yes');
+} else if (userAnswer.toLowerCase() === 'no' || userAnswer.toLowerCase() === 'n') {
+  alert('The user said fuck you');
+} else {
+  alert('You\'re a moron');
+}
+
+var userAnswer = prompt('Yes or No?');
+if (userAnswer.toLowerCase () === 'yes' || userAnswer.toLowerCase() === 'y'){
+  alert('The user said yes');
+} else if (userAnswer.toLowerCase() === 'no' || userAnswer.toLowerCase() === 'n') {
+  alert('The user said fuck you');
+} else {
+  alert('You\'re a moron');
+}
+var userAnswer = prompt('Yes or No?');
+if (userAnswer.toLowerCase () === 'yes' || userAnswer.toLowerCase() === 'y'){
+  alert('The user said yes');
+} else if (userAnswer.toLowerCase() === 'no' || userAnswer.toLowerCase() === 'n') {
+  alert('The user said fuck you');
+} else {
+  alert('You\'re a moron');
+}
+var userAnswer = prompt('Yes or No?');
+if (userAnswer.toLowerCase () === 'yes' || userAnswer.toLowerCase() === 'y'){
+  alert('The user said yes');
+} else if (userAnswer.toLowerCase() === 'no' || userAnswer.toLowerCase() === 'n') {
+  alert('The user said fuck you');
+} else {
+  alert('You\'re a moron');
+}
+
+
 
 var name= prompt("First, tell me about you. What's your name?");
 
@@ -33,12 +69,3 @@ function car () {
 
 }
 car();
-
-var userAnswer = prompt('Yes or No?');
-if (userAnswer.toLowerCase () === 'yes' || userAnswer.toLowerCase() === 'y'){
-  alert('The user said yes');
-} else if (userAnswer.toLowerCase() === 'no' || userAnswer.toLowerCase() === 'n') {
-  alert('The user said fuck you');
-} else {
-  alert('You\'re a moron');
-}
