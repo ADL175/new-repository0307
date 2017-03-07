@@ -2,43 +2,44 @@
 
 confirm ("Let's play a guessing game!");
 
-var userAnswer = prompt('Yes or No?');
-if (userAnswer.toLowerCase () === 'yes' || userAnswer.toLowerCase() === 'y'){
-  alert('The user said yes');
-} else if (userAnswer.toLowerCase() === 'no' || userAnswer.toLowerCase() === 'n') {
-  alert('The user said fuck you');
+var userFood = prompt('Am I a vegetarian?');
+if (userFood.toLowerCase () === 'yes' || userFood.toLowerCase() === 'y'){
+  alert('ROFLOL! Have you seen me?! No way. Omnivore.');
+} else if (userFood.toLowerCase() === 'no' || userFood.toLowerCase() === 'n') {
+  alert('You are correct, I eat everything!');
 } else {
-  alert('You\'re a moron');
+  alert('You\'re silly, type yes or no');
 }
 
-var userAnswer = prompt('Yes or No?');
-if (userAnswer.toLowerCase () === 'yes' || userAnswer.toLowerCase() === 'y'){
-  alert('The user said yes');
-} else if (userAnswer.toLowerCase() === 'no' || userAnswer.toLowerCase() === 'n') {
-  alert('The user said fuck you');
+var userMovie = prompt('Guess my favorite television show!');
+if (userMovie.toLowerCase () === 'stranger things'){
+  alert('Wow! You\'re totally right, I love Stranger Things!');
 } else {
-  alert('You\'re a moron');
-}
-var userAnswer = prompt('Yes or No?');
-if (userAnswer.toLowerCase () === 'yes' || userAnswer.toLowerCase() === 'y'){
-  alert('The user said yes');
-} else if (userAnswer.toLowerCase() === 'no' || userAnswer.toLowerCase() === 'n') {
-  alert('The user said fuck you');
-} else {
-  alert('You\'re a moron');
-}
-var userAnswer = prompt('Yes or No?');
-if (userAnswer.toLowerCase () === 'yes' || userAnswer.toLowerCase() === 'y'){
-  alert('The user said yes');
-} else if (userAnswer.toLowerCase() === 'no' || userAnswer.toLowerCase() === 'n') {
-  alert('The user said fuck you');
-} else {
-  alert('You\'re a moron');
+  alert('C\'mon, no way, Stranger Things on Netflix is the best show!');
 }
 
+var userCar = prompt('Guess the make of truck I drive!');
+if (userCar.toLowerCase () === 'nissan'){
+  alert('Wow, you\'re right! I drive a Nissan Titan');
+} else {
+  alert('No way! I don\'t drive a ' + userCar + '!');
+}
 
+var userGun = prompt('I am a firearms enthusiast, guess what my favorite gun brand is!');
+if (userGun.toLowerCase () === 'glock'){
+  alert('Wow, you\'re right! I love Glocks! They are the Toyota Camry of the gun world, ugly and reliable.');
+} else {
+  alert('No way! I don\'t like the ' + userGun + '!');
+}
 
-var name= prompt("First, tell me about you. What's your name?");
+var userComputer = prompt('Guess what computer brand I like!');
+if (userComputer.toLowerCase () === 'apple'){
+  alert('Wow, you\'re right! I love the Apple Macbooks!');
+} else {
+  alert('No way! I don\'t like ' + userComputer + '!');
+}
+
+var name= prompt("Okay, now tell me about you. What's your name?");
 
 function greeting () {
   alert("Good to meet you " + name + "!");
@@ -55,7 +56,7 @@ function eat () {
 eat();
 
 function restaurant () {
-  var place= prompt("Where do you like to eat?");
+  var place= prompt("What restaurant do you like to eat at?");
   alert("Yuck, I hate eating at " + place + "!");
   console.log('place:' + place);
 }
