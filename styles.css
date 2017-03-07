@@ -1,0 +1,25 @@
+* {
+  background-image: url(http://www.planwallpaper.com/static/images/i-should-buy-a-boat.jpg);
+  background-repeat: repeat-x;
+}
+
+h1 {
+  font-family: 'Diplomata SC', cursive;
+  background-color: red;
+  border: 5px solid black;
+  margin: auto;
+}
+
+h2 {
+  font-family: 'Griffy', cursive;
+  color: blue;
+  }
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+p{
+  background-color: beige!important;
+}
