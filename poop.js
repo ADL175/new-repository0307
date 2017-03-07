@@ -3,6 +3,7 @@
 confirm ("Let's play a guessing game!");
 
 var userFood = prompt('Am I a vegetarian?');
+console.log('food' + ":" + userFood);
 if (userFood.toLowerCase () === 'yes' || userFood.toLowerCase() === 'y'){
   alert('ROFLOL! Have you seen me?! No way. Omnivore.');
 } else if (userFood.toLowerCase() === 'no' || userFood.toLowerCase() === 'n') {
@@ -12,6 +13,7 @@ if (userFood.toLowerCase () === 'yes' || userFood.toLowerCase() === 'y'){
 }
 
 var userMovie = prompt('Guess my favorite television show!');
+console.log('movie' + ":" + userMovie);
 if (userMovie.toLowerCase () === 'stranger things'){
   alert('Wow! You\'re totally right, I love Stranger Things!');
 } else {
@@ -19,6 +21,7 @@ if (userMovie.toLowerCase () === 'stranger things'){
 }
 
 var userCar = prompt('Guess the make of truck I drive!');
+console.log('car' + ":" + userCar);
 if (userCar.toLowerCase () === 'nissan'){
   alert('Wow, you\'re right! I drive a Nissan Titan');
 } else {
@@ -26,6 +29,7 @@ if (userCar.toLowerCase () === 'nissan'){
 }
 
 var userGun = prompt('I am a firearms enthusiast, guess what my favorite gun brand is!');
+console.log('gun' + ":" + userGun);
 if (userGun.toLowerCase () === 'glock'){
   alert('Wow, you\'re right! I love Glocks! They are the Toyota Camry of the gun world, ugly and reliable.');
 } else {
@@ -33,6 +37,7 @@ if (userGun.toLowerCase () === 'glock'){
 }
 
 var userComputer = prompt('Guess what computer brand I like!');
+console.log('computer' + ":" + userComputer);
 if (userComputer.toLowerCase () === 'apple'){
   alert('Wow, you\'re right! I love the Apple Macbooks!');
 } else {
