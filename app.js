@@ -1,4 +1,6 @@
 "use strict";
+var userScore = 0;
+
 var name= prompt("Hello, what's your name?");
 
 function greeting () {
@@ -7,54 +9,76 @@ function greeting () {
 }
 greeting();
 
-confirm ("Let's play a guessing game!");
+confirm ("Let's play a guessing game, I have 7 questions for you, let's see if you can get a score of 7 out of 7!");
 
-var userFood = prompt('Am I a vegetarian?');
-console.log('food' + ":" + userFood);
-if (userFood.toLowerCase () === 'yes' || userFood.toLowerCase() === 'y'){
-  alert('ROFLOL! Have you seen me?! No way. Omnivore.');
-} else if (userFood.toLowerCase() === 'no' || userFood.toLowerCase() === 'n') {
-  alert('You are correct, I eat everything!');
-} else {
-  alert('You\'re silly, type yes or no');
+var question = ['Am I a vegetarian?','Do I like Indian food?', 'Is my favorite TV show Stranger Things?', 'Can I read minds?', 'Do I like long walks on the beach?'];
+
+var answerYes = ['ROFLOL! Have you seen me?! No way. Omnivore.', 'YES! I love Indian food!', 'Yes, I love Stranger Things', 'ROFLOL! No, I cannot', 'ROFLOL! No, I like to drive though!'];
+
+var answerNo = ['You are correct, I eat everything!', 'Wrong! I love Indian food!', 'What? I love the television show!', 'You are correct, I can\'t read minds', 'You are correct, I like to drive instead!'];
+
+var varInc = [[0,1], [1,0], [1,0], [0,1], [0,1]];
+
+
+
+for (var i = 0; i < question.length; i++) {
+  var userResponse = prompt(question[i]);
+  if (userResponse.toLowerCase() === 'yes' || userResponse.toLowerCase() === 'y'){
+    alert(answerYes[i]);
+    userScore += varInc[i][0];
+  } else if (userResponse.toLowerCase() === 'no' || userResponse.toLowerCase() === 'n') {
+    alert(answerNo[i]);
+    userScore += varInc[i][1];
+  } else {
+    console.log('Oops, something went wrong');
+  }
+  console.log('Score is: ' + userScore);
 }
 
-var userOne = prompt('Do I like Indian food?');
-console.log('indian' + ":" + userOne);
-if (userOne.toLowerCase () === 'yes' || userOne.toLowerCase() === 'y'){
-  alert('YES! I love Indian food!');
-} else if (userOne.toLowerCase() === 'no' || userOne.toLowerCase() === 'n') {
-  alert('Wrong! I love Indian food!');
-} else {
-  alert('You\'re silly, type yes or no');
+var tries = 0;
+while (tries < 4) {
+  var numberAnswer = prompt ('How many kids do I have?');
+  console.log('User name guess' + ":" + numberAnswer);
+  if (numberAnswer === '2' || numberAnswer.toLowerCase === 'two'){
+    alert('You\'re right! I have one four-year-old daughter and one-year-old daughter!');
+    userScore++;
+    console.log('User Score:' + userScore);
+    break;
+  } else if (numberAnswer > 2){
+    alert('No, that\'s too many!!! Try again!')
+    tries ++;
+  } else if (numberAnswer <2){
+    alert('Nope, I have more kids than that! Try again!');
+     tries++;
+  }
 }
 
-var userMovie = prompt('Is my favorite TV show Stranger Things?');
-console.log('movie' + ":" + userMovie);
-if (userMovie.toLowerCase () === 'yes' || userMovie.toLowerCase() === 'y'){
-  alert('Yes, I love Stranger Things');
-} else if (userMovie.toLowerCase() === 'no' || userMovie.toLowerCase === 'n'){
-  alert('What? I love the television show!');
-} else {
-  alert('You\'re silly, type yes or no');
-}
-
-var readMind = prompt('Can I read minds?');
-console.log('mind' + ":" + readMind);
-if (readMind.toLowerCase () === 'yes' || readMind.toLowerCase() === 'y'){
-  alert('ROFLOL! No, I cannot');
-} else if (readMind.toLowerCase() === 'no' || readMind.toLowerCase() === 'n') {
-  alert('You are correct, I can\'t read minds');
-} else {
-  alert('You\'re silly, type yes or no');
-}
-
-var longWalks = prompt('Do I like long walks on the beach?');
-console.log('walks' + ":" + longWalks);
-if (longWalks.toLowerCase () === 'yes' || longWalks.toLowerCase() === 'y'){
-  alert('ROFLOL! No, I like to drive though!');
-} else if (longWalks.toLowerCase() === 'no' || longWalks.toLowerCase() === 'n') {
-  alert('You are correct, I like to drive instead!');
-} else {
-  alert('You\'re silly, type yes or no');
+var kidNameArray = ['avery', 'zoe'];
+var tries = 0;
+while (tries < 6) {
+  var nameGuess = prompt('Can you guess one of the names of my daughters? One starts with an \'A\' and one with a \'Z\'.');
+  console.log('User name guess' + ":" + nameGuess);
+  if (nameGuess.toLowerCase () === kidNameArray[0]){
+    alert('Yes, my oldest 4-year-old is Avery! The other child is one-year-old Zoe!');
+    userScore++;
+    console.log('User Score:' + userScore);
+    break;
+  } else if (nameGuess.toLowerCase() === kidNameArray[1]) {
+    alert('Yes, my youngest daughter is Zoe! The other child is 4-year-old Avery!');
+    userScore++;
+    console.log('User Score:' + userScore);
+    break;
+  } else if (nameGuess.toLowerCase() !== kidNameArray[0] || nameGuess.toLowerCase() !== kidNameArray[1]){
+    alert('You\'re not even close!');
+    console.log('User Score:' + userScore);
+     tries++;
+  }
 };
+
+if (userScore === 7){
+  alert('Great job! Perfect Score, 7 out of 7 correct!');
+} else if (userScore <= 6){
+  alert('Not bad, but you missed a couple! Your score is ' + userScore + ' out of 7');
+} else if (userScore <= 4){
+  alert('Yikes, you don\'t know me very well! Your score is: ' + userScore + ' out of 7');
+}
