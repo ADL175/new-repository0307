@@ -1,16 +1,17 @@
 
 
 h1 {
-  font-family: 'Diplomata SC', cursive;
-  background-color: red!important;
+  font-family: 'Lora', serif;
+  background-color: #888;
   border: 5px solid black;
   margin: auto;
   text-align: center;
+  font-size: 5vw;
 }
 
 h2 {
-  font-family: 'Griffy', cursive;
-  color: blue;
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #222;
   text-align: center;
   font-size: 50px;
   }
@@ -18,22 +19,45 @@ h2 {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-
+  /*background: url('http://more-sky.com/data/out/8/IMG_250435.jpg');*/
+  background-color: #999;
 }
 
 div {
   text-align: center;
+
 }
 
 p{
-  background-color: beige!important;
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 150px;
   margin-left: 80px;
+  padding: 20px 20px;
+  background: url('http://www.shopalexanderarms.com/img-wtp709_kryptek_nomad.jpg') no-repeat;
+  background-size: 200%;
+
 
 }
 
 footer {
   font-family: inherit;
 }
+
+button {
+  margin: auto;
+  text-align: center;
+  font-size: 2vw;
+}
+
+img, iframe {
+  border: 3px solid black;
+}
+
+img {
+  width: 20%;
+}
+
+/*font-family: 'Indie Flower', cursive;
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Lora', serif;*/
