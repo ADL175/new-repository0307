@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  /*background: url('http://more-sky.com/data/out/8/IMG_250435.jpg');*/
+  background: url('https://farm4.staticflickr.com/3298/3413543261_1510e079ae.jpg') repeat;
   background-color: #999;
 }
 
@@ -24,7 +24,7 @@ h2 {
   font-size: 50px;
   }
 
-  header {
+header {
     text-align: center;
   }
 
@@ -32,13 +32,7 @@ div {
   text-align: center;
 }
 
-p{
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
-  padding: 20px 20px;
-  /*background: url('http://www.shopalexanderarms.com/img-wtp709_kryptek_nomad.jpg') no-repeat;*/
+p, {
   background-color: white;
   background-size: 200%;
   border-radius: 10%;
@@ -56,11 +50,23 @@ img, iframe {
 }
 
 img {
-  width: 20%;
+  width: 250%;
 }
 
-footer {
+footer, nav.Favorites {
   font-family: inherit;
+  text-align: center;
+}
+
+.Favorites {
+  text-align: left;
+  background-color: white;
+  border-radius: 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  padding: 20px 20px;
 }
 /*font-family: 'Indie Flower', cursive;
 font-family: 'Archivo Narrow', sans-serif;
