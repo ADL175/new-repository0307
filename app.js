@@ -12,15 +12,10 @@ greeting();
 confirm ('Let\'s play a guessing game, I have 7 questions for you, let\'s see if you can get a score of 7 out of 7!');
 
 function yesNoQuestionsFunk(){
-
   var question = ['Am I a vegetarian?','Do I like Indian food?', 'Is my favorite TV show Stranger Things?', 'Can I read minds?', 'Do I like long walks on the beach?'];
-
   var answerYes = ['ROFLOL! Have you seen me?! No way. Omnivore.', 'YES! I love Indian food!', 'Yes, I love Stranger Things', 'ROFLOL! No, I cannot', 'ROFLOL! No, I like to drive though!'];
-
   var answerNo = ['You are correct, I eat everything!', 'Wrong! I love Indian food!', 'What? I love the television show!', 'You are correct, I can\'t read minds', 'You are correct, I like to drive instead!'];
-
   var varInc = [[0,1], [1,0], [1,0], [0,1], [0,1]];
-
 
   for (var i = 0; i < question.length; i++) {
     var userResponse = prompt(question[i]);
