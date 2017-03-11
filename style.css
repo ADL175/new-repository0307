@@ -4,9 +4,11 @@ h1 {
   font-family: 'Lora', serif;
   background-color: #888;
   border: 5px solid black;
-  margin: auto;
+  margin: 5%;
   text-align: center;
   font-size: 5vw;
+  border-radius: 20%;
+
 }
 
 h2 {
@@ -36,7 +38,7 @@ p{
   padding: 20px 20px;
   background: url('http://www.shopalexanderarms.com/img-wtp709_kryptek_nomad.jpg') no-repeat;
   background-size: 200%;
-
+border-radius: 10%;
 
 }
 
@@ -52,6 +54,8 @@ button {
 
 img, iframe {
   border: 3px solid black;
+  border-radius: 10%;
+
 }
 
 img {
